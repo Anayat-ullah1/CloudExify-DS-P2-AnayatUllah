@@ -1,0 +1,68 @@
+CUSTOMER SEGMENTATION ANALYSIS REPORT
+CloudExify Data Science Ð Month 1 Final Project
+Project Title: Customer Segmentation Analysis using RFM Analysis and K-Means Clustering
+Dataset: Customer_dataset.csv
+1. Project Objective
+The objective of this project was to perform customer segmentation using RFM (Recency, Frequency, Monetary) analysis and the K-Means clustering algorithm. Customer segmentation helps businesses understand customer purchasing behavior, identify high-value customers, and develop targeted marketing strategies.
+2. Dataset Overview
+The dataset contains customer transaction records collected during the year 2023.
+Dataset Summary
+* Total Transactions: 50,000
+* Total Customers: 50,000
+* Total Features: 9
+* Transaction Period: January 2023 Ð September 2023
+* Categories: 6
+* Merchants: 36,939
+The dataset includes customer information, transaction amount, transaction date, merchant name, and product category.
+3. Data Cleaning
+The following preprocessing steps were performed before analysis:
+* Successfully loaded the dataset using Pandas.
+* Checked for missing values.
+* Identified 5,047 missing values in the Gender column.
+* Verified that there were no duplicate records.
+* Converted the Date column into DateTime format.
+* Generated a TransactionID column for RFM analysis.
+The dataset was successfully prepared for customer segmentation.
+4. Exploratory Data Analysis
+The following statistics were obtained from the dataset:
+MetricValueTotal Transactions50,000Total Customers50,000Total Revenue$22,105,961.97Average Transaction$442.12Maximum Transaction$2,999.88Minimum Transaction$5.01The transaction amounts show considerable variation, indicating that customers exhibit different purchasing behaviors and spending capacities.
+5. RFM Analysis
+RFM Analysis was performed using the following metrics:
+* Recency (R): Number of days since the customer's last transaction.
+* Frequency (F): Number of transactions made by each customer.
+* Monetary (M): Total amount spent by each customer.
+The calculated RFM statistics are summarized below:
+MetricMeanAverage Recency144.35 DaysAverage Frequency1 TransactionAverage Monetary Value$442.12The RFM features were standardized using StandardScaler before applying the clustering algorithm.
+6. Customer Segmentation using K-Means
+The Elbow Method was used to determine the appropriate number of clusters, after which K-Means clustering (K = 4) was applied.
+Customer Distribution
+SegmentCustomersRegular Customers15,064Loyal Customers15,017At Risk Customers14,980VIP Customers4,939The clustering algorithm successfully grouped customers according to their purchasing behavior.
+7. Customer Segment Profile
+SegmentAverage RecencyAverage FrequencyAverage Monetary ($)VIP Customers143.711.002,125.65Loyal Customers48.621.00263.39Regular Customers240.331.00261.93At Risk Customers144.021.00247.42Interpretation
+* VIP Customers generate the highest revenue and represent the company's most valuable customers.
+* Loyal Customers have the most recent purchases, indicating strong engagement with the business.
+* Regular Customers contribute consistent purchases but have lower spending levels.
+* At Risk Customers have moderate spending but require attention to prevent customer churn.
+8. Top Spending Customers
+The analysis identified the highest-spending customers in the dataset.
+The top customer spent $2,999.88, while the remaining top customers also recorded transaction amounts close to $3,000, indicating a small group of premium customers who contribute significantly to revenue.
+9. Business Recommendations
+Based on the clustering results, the following recommendations are proposed:
+* Reward VIP customers with exclusive discounts, premium memberships, and loyalty programs.
+* Maintain engagement with Loyal customers through personalized offers and reward points.
+* Encourage Regular customers to purchase more frequently using targeted promotions and cross-selling strategies.
+* Re-engage At Risk customers through email campaigns, special discounts, and reminder notifications.
+* Utilize customer segmentation to personalize marketing campaigns and improve customer retention.
+10. Key Insights
+* The dataset contains 50,000 unique customers, each with a single recorded transaction.
+* The business generated a total revenue of $22.11 million during the analysis period.
+* Customer segmentation was successfully performed using RFM Analysis and K-Means Clustering.
+* VIP Customers recorded the highest average monetary value ($2,125.65), making them the most profitable customer segment.
+* Loyal Customers exhibited the lowest average recency, indicating recent purchasing activity.
+* The segmentation results provide valuable information for customer retention, marketing, and sales strategies.
+11. Conclusion
+This project successfully implemented customer segmentation using RFM analysis and the K-Means clustering algorithm. The customer data was cleaned, analyzed, standardized, and grouped into four meaningful customer segments based on purchasing behavior.
+The analysis demonstrates how machine learning techniques can help businesses identify high-value customers, improve customer retention, and develop targeted marketing campaigns. The generated customer profiles and visualizations provide actionable insights that can support strategic business decision-making.
+Overall, the project achieved all of its objectives and demonstrates the practical application of unsupervised machine learning techniques in customer analytics.
+Project Status: Completed Successfully.
+
